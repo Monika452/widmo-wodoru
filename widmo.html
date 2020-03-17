@@ -7,12 +7,12 @@
 <button onclick="myFunction()">Licz</button>
 <div id="c"></div>
 <script>
+function myFunction() {
 var a = document.getElementById("a").value;
 var b = document.getElementById("b").value;
 
-function myFunction() {
 if (parseInt(a)>parseInt(b)) {
-document.getElementById("c").innerText=("Długość wyemitowanej fali: " +(1/(1/Math.pow(parseInt(b), 2)-1/Math.pow(parseInt(a), 2))*90.35454)+ " nm");}
+document.getElementById("c").innerHTML=("Długość wyemitowanej fali: " +(1/(1/Math.pow(parseInt(b), 2)-1/Math.pow(parseInt(a), 2))*90.35454)+ " nm");}
 else {
 document.getElementById("c").innerText="Nie wyemituje fali";}}
 </script>
